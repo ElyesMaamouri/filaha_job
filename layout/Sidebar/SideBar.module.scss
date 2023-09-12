@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  .menu {
+    border-radius: 0px 47px 46.5px 46.5px;
+    background: #3f9858;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    &:hover {
+        background: #3f9858 !important;
+        cursor: pointer;
+    }
+    .link {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

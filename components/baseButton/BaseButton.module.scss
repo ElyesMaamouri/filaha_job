@@ -1,0 +1,13 @@
+.container {
+    background: #fff;
+    color: #000;
+    border: 1px solid #9F9483;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    
+
+    &:hover{
+        background: #9F9483
+    }
+}
