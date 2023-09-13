@@ -1,23 +1,35 @@
 import React from "react";
 import Navbar from "../layout/Navbar";
-import Hero from "../components/hero";
+import Map from "@/components/map";
 import SideBar from "@/layout/Sidebar";
+ 
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
+import { fr } from 'date-fns/locale';
 import styles from '../styles/WhoWeAre.module.scss'
 
 export default function WhoAreWe() {
+    const [selected, setSelected] = React.useState<Date>();
     return (
         <>
             <Navbar />
             <div className={styles.container}>
                 <div className={styles.menu}>
-                    <SideBar text="acceuil" icon={"/img/home.svg"} customStyle={{ background: "#3F9858" }} />
-                    <SideBar text="a propos" icon={"/img/information-button 1.svg"} customStyle={{ background: "#ACD460" }} />
-                    <SideBar text="référentiel" icon={"/img/book 1.svg"} customStyle={{ background: "#ACD460" }} />
-                    <SideBar text="offre d'emploi" icon={"/img/business-card 1.svg"} customStyle={{ background: "#ACD460" }} />
-                    <SideBar text="documentation" icon={"/img/doc.svg"} customStyle={{ background: "#ACD460" }} />
+                    <SideBar text="acceuil" icon={"/img/home.svg"} customStyle={{ background: "#3F9858" }} link={"/"} />
+                    <SideBar text="a propos" icon={"/img/information-button 1.svg"} customStyle={{ background: "#ACD460" }} link={"/qui-sommes-nous"} />
+                    <SideBar text="référentiel" icon={"/img/book 1.svg"} customStyle={{ background: "#ACD460" }} link={"/"} />
+                    <SideBar text="offre d'emploi" icon={"/img/business-card 1.svg"} customStyle={{ background: "#ACD460" }} link={"/"} />
+                    <SideBar text="documentation" icon={"/img/doc.svg"} customStyle={{ background: "#ACD460" }} link={"/"} />
+                     <Map/>
+                    <DayPicker
+                        mode="single"
+                        selected={selected}
+                        onSelect={setSelected}
+                        locale={fr}
+                    />
                 </div>
 
-
+               
                 <div className={styles.content}>
                     <h1 className={styles.title}>Qui sommes-nous ?</h1>
 
@@ -35,7 +47,7 @@ export default function WhoAreWe() {
                                 <p className={styles.card__text}>Notre Mission</p>
                                 <img className={styles.shape1} src="/img/shape1.png" />
                             </div>
-                            <p className={styles.decription}>FILAHA JOB vise la résorptioon du chomage, l"amélioration du rendement et de l'activité agricole, l"amélioration de la sécurité alimentaire, eet la lutte contre les pratiques informelles dans le secteur agricole</p>
+                            <p className={styles.decription}>FILAHA JOB offre un service de digital recrutement de haut niveau pour assurer un meilleur maillage entre les travailleurs et les employeurs dans le marché de l'emploi agricole</p>
                         </div>
                     </div>
 

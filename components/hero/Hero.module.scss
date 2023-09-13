@@ -1,19 +1,32 @@
 .container {
   margin-top: 20px;
   display: flex;
-  .rightHero {
-    width: calc(100% - 280px);
 
-    border: 1px solid red;
-  }
   .menu {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .heroStyle {
+    width: calc(100% - 313px);
+    position: relative;
+    .iconChat {
+      position: absolute;
+      right: 15px;
+      bottom: 58px;
+    }
   }
   .cardWrapper {
     display: flex;
     gap: 10px;
     width: 100%;
   }
+  .cardUser {
+    display: flex;
+    gap: 180px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  
 }

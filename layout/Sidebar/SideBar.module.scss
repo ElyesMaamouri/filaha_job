@@ -4,18 +4,18 @@
   gap: 20px;
   width: 250px;
   font-weight: 600;
-  
+
   .menu {
     border-radius: 0px 47px 46.5px 46.5px;
-    background: #3f9858;
+    background:rgb(172, 212, 96);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    &:hover {
-        background: #3f9858 !important;
-        cursor: pointer;
-    }
+    // &:hover {
+    //     background: #3f9858 !important;
+    //     cursor: pointer;
+    // }   
     .link {
       color: #fff;
       text-decoration: none;

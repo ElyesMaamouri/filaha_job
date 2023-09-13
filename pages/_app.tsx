@@ -10,7 +10,7 @@ export default function MyApp({
 }: AppProps & AppOwnProps) {
   return (
     <>
-      <p>Data: {example}</p>
+       
       <Component {...pageProps} />
     </>
   )
