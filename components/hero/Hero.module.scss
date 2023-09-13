@@ -1,9 +1,19 @@
 .container {
-    margin-top: 20px; 
+  margin-top: 20px;
+  display: flex;
+  .rightHero {
+    width: calc(100% - 280px);
+
+    border: 1px solid red;
+  }
+  .menu {
     display: flex;
-    .menu {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cardWrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
 }

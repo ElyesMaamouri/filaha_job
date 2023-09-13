@@ -12,6 +12,7 @@ const SideBar: React.FC<any> = ({ text, icon,  customStyle }: { text: string, ic
 
               
             </div>
+     
         </div>
     );
 }

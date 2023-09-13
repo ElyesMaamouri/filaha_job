@@ -5,19 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8044",
     "lint": "next lint"
   },
   "dependencies": {
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "moedim": "^0.5.0",
     "next": "13.4.19",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
+    "@types/react-flatpickr": "^3.8.8",
     "sass": "^1.66.1"
   }
 }

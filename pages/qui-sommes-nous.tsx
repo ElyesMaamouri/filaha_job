@@ -84,7 +84,7 @@ export default function WhoAreWe() {
 
                                         <div className={styles.rightSide}>
                                             <h2 className={styles.title}>Digital matchmaking</h2>
-                                            <p className={styles.decription}>Consultation des offres et delandes d'emploi</p>
+                                            <p className={styles.decription}>Consultation des offres et delandes d{""}emploi</p>
                                         </div>
 
                                     </div>
